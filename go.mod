@@ -1,4 +1,4 @@
-module github.com/sparkymat/crimsonpix
+module github.com/sparkymat/trackit
 
 go 1.16
 

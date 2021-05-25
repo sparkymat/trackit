@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/sparkymat/crimsonpix/database/definitions"
+	"github.com/sparkymat/trackit/database/definitions"
 
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"

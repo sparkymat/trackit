@@ -8,11 +8,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
-	"github.com/sparkymat/crimsonpix/database"
+	"github.com/sparkymat/trackit/database"
 )
 
 func main() {
-	db, err := sqlx.Connect("postgres", "dbname=crimsonpix_development sslmode=disable")
+	db, err := sqlx.Connect("postgres", "dbname=trackit_development sslmode=disable")
 	if err != nil {
 		log.Fatalln(err)
 	}
