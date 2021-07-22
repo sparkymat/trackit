@@ -9,6 +9,7 @@ import (
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 	"github.com/sparkymat/trackit/database"
+	"github.com/sparkymat/trackit/internal/session"
 )
 
 func main() {
@@ -26,6 +27,7 @@ func main() {
 	fmt.Printf("%+v\n", u)
 
 	r := gin.Default()
+	r.POST("/login", session.CreateHandler)
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
